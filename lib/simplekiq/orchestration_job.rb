@@ -19,7 +19,7 @@ module Simplekiq
       conditionally_within_parent_batch do
         OrchestrationExecutor.execute(args: args, job: self, workflow: orchestration.serialized_workflow)
       end
-      puts "BATCH GOES HERE??? :: #{batch}
+      puts "BATCH GOES HERE??? :: #{batch}"
     end
 
     def workflow_plan(*args)
